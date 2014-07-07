@@ -2,7 +2,7 @@
 module.exports = function(grunt) {
   'use strict';
 
-  var jsScripts = ['scripts/src/namespace.js', 'scripts/src/modules/*.js', 'scripts/src/init.js'];
+  var jsScripts = ['scripts/src/namespace.js', 'scripts/src/modules/*.js'];
 
   grunt.initConfig({
     jshint: {
