@@ -1,10 +1,7 @@
 tdd-calc
 ========
 
-An example app aiming to demonstrate JS unit testing approaches.
+An example app aiming to explore JS unit testing approaches.
 
 TODO:
-
-Compile modules + namespace as usual.
-
-Require the compiled JS and test that.
+Write tests using other syntaxes.
