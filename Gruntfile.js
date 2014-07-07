@@ -38,4 +38,6 @@ module.exports = function(grunt) {
 
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
+
+  grunt.registerTask('default', ['jshint:scripts', 'simplemocha:all']);
 };
