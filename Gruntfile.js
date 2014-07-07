@@ -19,7 +19,19 @@ module.exports = function(grunt) {
     watch: {
       scripts: {
         files: [jsScripts, 'test.js'],
-        tasks: ['jshint']
+        tasks: ['jshint', 'simplemocha']
+      }
+    },
+    simplemocha: {
+      options: {
+        globals: ['should'],
+        timeout: 3000,
+        ignoreLeaks: false,
+        ui: 'bdd',
+        reporter: 'tap'
+      },
+      all: {
+        src: ['test/*.js']
       }
     }
   });
